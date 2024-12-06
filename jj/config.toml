@@ -1,0 +1,165 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[colors]
+author = "#f5e0dc"
+bookmark = "#f2cdcd"
+bookmarks = "#f2cdcd"
+change_id = "#f2cdcd"
+commit_id = "#f5c2e7"
+committer = "#f5e0dc"
+"config_list name" = "#f5c2e7"
+"config_list overridden" = "#1e1e2e"
+"config_list overridden name" = "#1e1e2e"
+"config_list overridden path" = "#1e1e2e"
+"config_list overridden source" = "#1e1e2e"
+"config_list overridden value" = "#1e1e2e"
+"config_list path" = "#f5c2e7"
+"config_list source" = "#f2cdcd"
+"config_list value" = "#f5e0dc"
+conflict = "#f5c2e7"
+conflict_description = "#f9e2af"
+"conflict_description difficult" = "#f38ba8"
+"description placeholder" = "#f5e0dc"
+"diff binary" = "#f2cdcd"
+"diff copied" = "#f5e0dc"
+"diff empty" = "#f2cdcd"
+"diff header" = "#f5e0dc"
+"diff hunk_header" = "#f2cdcd"
+"diff modified" = "#f2cdcd"
+"diff renamed" = "#f2cdcd"
+"diff untracked" = "#f5c2e7"
+divergent = "#f5c2e7"
+"divergent change_id" = "#f5c2e7"
+"divergent rest" = "#f5c2e7"
+elided = "#1e1e2e"
+empty = "#f5e0dc"
+"empty description placeholder" = "#f5e0dc"
+git_head = "#f5c2e7"
+git_ref = "#f5c2e7"
+git_refs = "#f5c2e7"
+"hidden prefix" = "default"
+local_bookmarks = "#f2cdcd"
+"operation current_operation id" = "#f5c2e7"
+"operation current_operation tags" = "#f5c2e7"
+"operation current_operation time" = "#f2cdcd"
+"operation current_operation user" = "#f9e2af"
+"operation id" = "#f5c2e7"
+"operation tags" = "#f5c2e7"
+"operation time" = "#f2cdcd"
+"operation user" = "#f5e0dc"
+placeholder = "#f5c2e7"
+remote_bookmarks = "#f2cdcd"
+rest = "#1e1e2e"
+root = "#f5c2e7"
+separator = "#1e1e2e"
+"signature display" = "#f5e0dc"
+"signature key" = "#f2cdcd"
+"signature status bad" = "#f5c2e7"
+"signature status good" = "#f5c2e7"
+"signature status invalid" = "#f5c2e7"
+"signature status unknown" = "#f5e0dc"
+tag = "#f2cdcd"
+tags = "#f2cdcd"
+timestamp = "#f2cdcd"
+working_copies = "#f5c2e7"
+"working_copy author" = "#f9e2af"
+"working_copy bookmark" = "#f2cdcd"
+"working_copy bookmarks" = "#f2cdcd"
+"working_copy change_id" = "#f2cdcd"
+"working_copy commit_id" = "#f5c2e7"
+"working_copy committer" = "#f9e2af"
+"working_copy conflict" = "#f5c2e7"
+"working_copy description placeholder" = "#f9e2af"
+"working_copy divergent" = "#f5c2e7"
+"working_copy divergent change_id" = "#f5c2e7"
+"working_copy empty" = "#f5e0dc"
+"working_copy empty description placeholder" = "#a6e3a1"
+"working_copy git_ref" = "#f5c2e7"
+"working_copy git_refs" = "#f5c2e7"
+"working_copy local_bookmarks" = "#f2cdcd"
+"working_copy placeholder" = "#f5c2e7"
+"working_copy remote_bookmarks" = "#f2cdcd"
+"working_copy tag" = "#f2cdcd"
+"working_copy tags" = "#f2cdcd"
+"working_copy timestamp" = "#f2cdcd"
+"working_copy working_copies" = "#f5c2e7"
+
+[colors."diff access-denied"]
+bg = "#f5c2e7"
+
+[colors."diff added"]
+fg = "#f5e0dc"
+
+[colors."diff file_header"]
+bold = true
+
+[colors."diff removed"]
+fg = "#f5c2e7"
+
+[colors."diff token"]
+underline = true
+
+[colors."divergent prefix"]
+fg = "#f5c2e7"
+underline = true
+
+[colors.error]
+bold = true
+fg = "#f38ba8"
+
+[colors."error heading"]
+bold = true
+fg = "#f5c2e7"
+
+[colors.error_source]
+fg = "#f2cdcd"
+
+[colors."error_source heading"]
+bold = true
+fg = "#f2cdcd"
+
+[colors.hint]
+fg = "#f2cdcd"
+
+[colors."hint heading"]
+bold = true
+fg = "#f2cdcd"
+
+[colors."node conflict"]
+bold = true
+fg = "#f5c2e7"
+
+[colors."node current_operation"]
+bold = true
+fg = "#f5c2e7"
+
+[colors."node elided"]
+fg = "#1e1e2e"
+
+[colors."node immutable"]
+bold = true
+fg = "#f2cdcd"
+
+[colors."node working_copy"]
+bold = true
+fg = "#f5c2e7"
+
+[colors."operation current_operation"]
+bold = true
+
+[colors.prefix]
+bold = true
+
+[colors.warning]
+bold = true
+fg = "#f9e2af"
+
+[colors."warning heading"]
+bold = true
+fg = "#f5e0dc"
+
+[colors.working_copy]
+bold = true
+
+[ui]
+default-command = ["log", "--limit", "10"]

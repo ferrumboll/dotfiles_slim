@@ -63,6 +63,7 @@ The main application bundle is defined in `config.nix` under the `dotfiles` envi
 
 - **lazygit** - Terminal UI for git commands with intuitive interface
 - **gh** - GitHub CLI for repository management and workflows
+- **opencommit** - AI-powered git commit message generator
 
 ### Terminal & Shell Enhancement
 
@@ -201,4 +202,31 @@ gh workflow run workflow.yml
 ```
 
 **Documentation**: [https://cli.github.com/manual/](https://cli.github.com/manual/)
+
+### OpenCommit
+
+**What it is**: OpenCommit is an AI-powered tool that automatically generates meaningful git commit messages based on your staged changes. It uses OpenAI's API to analyze your code changes and create descriptive commit messages.
+
+**How it's used**: After staging your changes with git, run opencommit instead of `git commit` to automatically generate and use an AI-written commit message that describes your changes.
+
+**Setup**: Requires an `OPENAI_API_KEY` environment variable to be set with your OpenAI API key.
+
+**Basic commands**:
+```bash
+# Set your OpenAI API key
+export OPENAI_API_KEY="your-api-key-here"
+
+# Generate and commit with AI message
+oc
+
+# Generate commit message without committing
+oc --dry-run
+
+# Configure opencommit settings
+oc config set OCO_OPENAI_MAX_TOKENS 500
+oc config set OCO_OPENAI_BASE_PATH https://api.openai.com/v1
+oc config set OCO_DESCRIPTION true
+```
+
+**Documentation**: [https://github.com/di-sukharev/opencommit](https://github.com/di-sukharev/opencommit)
 

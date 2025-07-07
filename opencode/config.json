@@ -3,5 +3,4 @@
 	"theme": "catppuccin",
 	"autoshare": false,
 	"autoupdate": true,
-	"model": "openrouter/cypher-alpha:free"
 }

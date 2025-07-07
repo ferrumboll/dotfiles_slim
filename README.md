@@ -38,10 +38,6 @@ You need to have the `ghcr.io/devcontainers/features/nix:1` feature:
         "terminal.integrated.profiles.linux": {
           "fish": {
             "path": "fish"
-          },
-          "tmux": {
-            "path": "tmux",
-            "icon": "terminal-tmux"
           }
         }
         ...
@@ -63,10 +59,21 @@ The setup provides a complete, batteries-included development environment that w
 
 The main application bundle is defined in `config.nix` under the `dotfiles` environment, which includes the following tools:
 
-### Core Development Tools
+### Version Control & Git Tools
 
-- **neovim** - Modern Vim-based text editor with extensive plugin support
-- **nodejs_22** - Node.js runtime (specifically for Copilot nvim integration)
+- **lazygit** - Terminal UI for git commands with intuitive interface
+- **gh** - GitHub CLI for repository management and workflows
+
+### Terminal & Shell Enhancement
+
+- **fish** - User-friendly command line shell
+- **starship** - Cross-shell prompt with customizable themes
+- **zoxide** - Smarter cd command that learns your habits
+- **atuin** - Shell history replacement with sync capabilities
+
+### Cloud & Infrastructure
+
+- **awscli2** - Amazon Web Services command line interface
 
 ### File Management & Search
 
@@ -75,29 +82,11 @@ The main application bundle is defined in `config.nix` under the `dotfiles` envi
 - **fzf** - Command-line fuzzy finder for interactive filtering
 - **eza** - Modern replacement for `ls` with better defaults and colors
 
-### Version Control & Git Tools
-
-- **lazygit** - Terminal UI for git commands with intuitive interface
-- **gh** - GitHub CLI for repository management and workflows
-
 ### Python Development
 
 - **black** - Uncompromising Python code formatter
 - **pylint** - Python static code analysis tool
 - **isort** - Python import sorting utility
-
-### Terminal & Shell Enhancement
-
-- **fish** - User-friendly command line shell
-- **tmux** - Terminal multiplexer for session management
-- **zellij** - Modern terminal workspace with built-in multiplexer
-- **starship** - Cross-shell prompt with customizable themes
-- **zoxide** - Smarter cd command that learns your habits
-- **atuin** - Shell history replacement with sync capabilities
-
-### Cloud & Infrastructure
-
-- **awscli2** - Amazon Web Services command line interface
 
 ## Nix Configuration Features
 

@@ -33,7 +33,7 @@ You need to have the `ghcr.io/devcontainers/features/nix:1` feature:
       ...
       "settings": {
         ...
-        "dotfiles.repository": "https://github.com/ferrumboll/dotfiles",
+        "dotfiles.repository": "https://github.com/ferrumboll/dotfiles_slim",
         "terminal.integrated.defaultProfile.linux": "fish",
         "terminal.integrated.profiles.linux": {
           "fish": {

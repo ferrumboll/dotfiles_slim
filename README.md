@@ -20,15 +20,24 @@ To use this configuration in a DevContainer, add the following to your `.devcont
 
 ```json
 {
-  "dotfiles.repository": "https://github.com/ferrumboll/dotfiles",
-  "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.profiles.linux": {
-    "fish": {
-      "path": "fish"
-    },
-    "tmux": {
-      "path": "tmux",
-      "icon": "terminal-tmux"
+  "customizations": {
+    "vscode": {
+      ...
+      "settings": {
+        ...
+        "dotfiles.repository": "https://github.com/ferrumboll/dotfiles",
+        "terminal.integrated.defaultProfile.linux": "fish",
+        "terminal.integrated.profiles.linux": {
+          "fish": {
+            "path": "fish"
+          },
+          "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+          }
+        }
+        ...
+      }
     }
   }
 }

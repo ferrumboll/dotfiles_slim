@@ -18,8 +18,16 @@ The environment emphasizes modern alternatives to traditional Unix tools, provid
 
 To use this configuration in a DevContainer, add the following to your `.devcontainer/devcontainer.json`:
 
+You need to have the `ghcr.io/devcontainers/features/nix:1` feature:
+
 ```json
 {
+  ...
+  "features": {
+    ...
+    "ghcr.io/devcontainers/features/nix:1": {}
+  },
+  ...
   "customizations": {
     "vscode": {
       ...
